@@ -74,15 +74,15 @@ cd ~/catkin_ws/src
 # For ssh:
 # git clone git@github.com:MIT-SPARK/Kimera-VIO-ROS.git
 # For https:
- git clone https://github.com/Harshit0803/Kimera-VIO-ROS-MOD.git
+git clone https://github.com/Harshit0803/Kimera-VIO-ROS-MOD.git
 
 # Install dependencies from rosinstall file using wstool
 wstool init # Use unless wstool is already initialized
 
 # For ssh:
-wstool merge Kimera-VIO-ROS/install/kimera_vio_ros_ssh.rosinstall
+# wstool merge Kimera-VIO-ROS/install/kimera_vio_ros_ssh.rosinstall
 # For https
-# wstool merge Kimera-VIO-ROS/install/kimera_vio_ros_https.rosinstall
+wstool merge Kimera-VIO-ROS-MOD/install/kimera_vio_ros_https.rosinstall
 
 # download and update repos:
 wstool update
